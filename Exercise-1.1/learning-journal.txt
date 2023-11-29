@@ -1,0 +1,3 @@
+Exercise-1.1
+
+So far I've only learned the very basics of coding with Python, but I hope to learn how I can use Python in my full time career as a web developer.
