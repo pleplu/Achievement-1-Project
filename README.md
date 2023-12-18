@@ -35,6 +35,3 @@ https://github.com/pleplu/Achievement-1-Project/blob/main/Exercise-1.1/Documenta
 Step 1: For the data structure for recipe_1 I decided to use a dictionary due to my use of key value pairs for each recipe. Also, say I wanted to add ingredients, or change certain parts of the recipe, I can simply update those values rather than remaking the entire recipe. 
 
 Step 2: As for all_recipes I used a list to store recipe data. I've used a list for this purpose due to it being mutable and thus easier to store and modify data. 
-
-# Exercise-1.3
-
