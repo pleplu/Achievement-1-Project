@@ -1,0 +1,22 @@
+Users will be able to search for recipes based on name.
+They'll be able to enter the name of the recipe as well as the type of chart to display,
+and they'll recieve that chart displaying the cooking time of the recipe.
+
+Data Analysis:
+-----------------
+Bar
+x-axis: Recipe name
+y-axis: Number of recipes
+
+Pie
+y-axis: Cooking time
+
+Line
+x-axis: Recipe name
+y-axis: Cooking time
+
+Execution Flow:
+-----------------
+The user will first land on the home screen where they'll have to provide login info to be able to access the rest of the app.
+Upon logging in users will be greeted by a list of clickable recibes which lead to a page containing more descriptive info about said recipes.
+They'll also have the option to "Display Recipe Data" which will allow them to search various recipes to see stats displayed on charts.
