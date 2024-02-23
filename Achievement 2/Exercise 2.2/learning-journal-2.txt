@@ -1,0 +1,168 @@
+Exercise 2.1: Getting Started with Django
+
+Reflection Questions
+
+1.	Suppose you’re a web developer in a company and need to decide if you’ll use vanilla (plain) Python for a project, or a framework like Django instead. What are the advantages and drawbacks of each?
+
+    While vanilla python may offer more control or flexibility over your porject, that could work against it in larger projects where a structured framework such as Django would be more helpful.
+
+2.	In your own words, what is the most significant advantage of Model View Template (MVT) architecture over Model View Controller (MVC) architecture?
+
+    Model View Templates loose coupling allows for more flexibility in handling HTTP requests and responses. Changes to the application are easier to implement due to the less rigid structure.
+
+3.	Now that you’ve had an introduction to the Django framework, write down three goals you have for yourself and your learning process during this Achievement. You can reflect on the following questions if it helps:
+
+    I want to be able to create projects using Django, learn how to use the many features that Django offers efficiently, and learn how to incorporate Django to imporve other projects.
+
+=============================================================================================================================================================
+
+Exercise 2.2: Django Project Set Up
+
+Reflection Questions
+
+1.	Suppose you’re in an interview. The interviewer gives you their company’s website as an example, asking you to convert the website and its different parts into Django terms. How would you proceed? For this question, you can think about your dream company and look at their website for reference. 
+    (Hint: In the Exercise, you saw the example of the CareerFoundry website in the Project and Apps section.)
+
+    The companies home page, decided by the view and urls, would be like my recipes/home.html. It would display information welcoming users to their site and give them the oppurtunity to login for further access.
+    They might then be greeted with a database of different products that the company offers displayed according the html and django model format. From there they can interect with the model via html for further functionality.
+
+2.	In your own words, describe the steps you would take to deploy a basic Django application locally on your system. 
+
+    First, after installing Django, I would use the 'startproject' function to create a framework for my project. Then create apps as necessary using the 'startapp' function. I'd then configure settings as necessary, and start definging my projects models.
+    Then after setting up my view and properly adding my function to my url, I would configure my apps html to suite my needs. Finally I'd run the proper migrations, create a super user, and run the server to verify everything is correct. 
+
+3.	Do some research about the Django admin site and write down how you’d use it during your web application development.
+
+    The django admin site reads metadata from your models to provide a quick, model-centric interface where trusted users can manage content on your site and can be used as an organization’s internal management tool.
+
+=============================================================================================================================================================
+
+Exercise 2.3: Django Models
+
+Reflection Questions
+
+1.	Do some research on Django models. In your own words, write down how Django models work and what their benefits are.
+
+    A model in Django is a special kind of object – it is saved in the database, you can think of a model in the database as a spreadsheet with columns (fields) and rows (data)
+
+2.	In your own words, explain why it is crucial to write test cases from the beginning of a project. You can take an example project to explain your answer.
+
+    Countless hours can be lost fixing problems caused by changes to the codebase. Having tests in place will help ensure that if a specific function breaks you are aware of it.
+
+=============================================================================================================================================================
+
+Exercise 2.4: Django Views and Templates
+
+Reflection Questions
+
+1.	Do some research on Django views. In your own words, use an example to explain how Django views work.
+
+    A view is a place where we put the "logic" of an application, a view will request information from the model created before and pass it to a template
+
+2.	Imagine you’re working on a Django web development project, and you anticipate that you’ll have to reuse lots of code in various parts of the project. In this scenario, will you use Django function-based views or class-based views, and why?
+
+    Class based views, they offer reducing the lines of code needed and make your code easier to organize and extend. 
+
+3.	Read Django’s documentation on the Django template language and make some notes on its basics.
+
+    A template is a text file that can generate any text-based format (HTML, XML, CSV, etc.) and contains variables, which get replaced with values when the template is evaluated, and tags, which control the logic of the template
+
+=============================================================================================================================================================
+
+Exercise 2.5: Django MVT Revisited
+
+Reflection Questions
+
+1.	In your own words, explain Django static files and how Django handles them.
+
+    Static files serve additional files such as images, JavaScript, or CSS that websites generally need. Django provides django.contrib.staticfiles to manage them.
+
+2.	Look up the following two Django packages on Django’s official documentation and/or other trusted sources. Write a brief description of each.
+
+    Package Description:
+
+    ListView - Display multiple instances of a table in the database
+
+    DetailView - Display a particular instance of a table from the database with all the necessary details
+
+3.	You’re now more than halfway through Achievement 2! Take a moment to reflect on your learning in the course so far. How is it going? What’s something you’re proud of so far? Is there something you’re struggling with? What do you need more practice with? You can use these notes to guide your next mentor call. 
+
+    I feel very good about using Django. The rigid structure helps to streamline my work and keep me on pace, and mkaes for a less confusing development. 
+
+=============================================================================================================================================================
+
+Exercise 2.6: User Authentication in Django
+
+Reflection Questions:
+
+1.	In your own words, write down the importance of incorporating authentication into an application. You can take an example application to explain your answer. 
+
+    Web applications handle sensitive user data, and poor security measures can expose this data. Authentication verifies a user is who they claim to be, and authorization determines what an authenticated user is allowed to do.
+
+2.	In your own words, explain the steps you should take to create a login for your Django web application. 
+
+    I would have to import the proper tools that I plan to use for my login view at the project level. Then after creating a function that properly authenticates uers, I would make the appropriate additions to my porject's urls as well as creat html that the user can interact with.
+    I could then further require users to provide login information before being able to access certain views in my project.
+
+3.	Look up the following three Django functions on Django’s official documentation and/or other trusted sources and write a brief description of each.
+
+    Function Description:
+
+    authenticate() - Takes credentials as keyword arguments, username and password for the default case, checks them against each authentication backend, and returns a User object if the credentials are valid for a backend
+
+    redirect() - Returns an HttpResponseRedirect to the appropriate URL for the arguments passed
+
+    include() - Takes a full Python import path to another URLconf module that should be “included” in this place
+
+=============================================================================================================================================================
+
+Exercise 2.7: Data Analysis and Visualization in Django
+
+Reflection Questions:
+
+1.	Consider your favorite website/application (you can also take CareerFoundry). Think about the various data that your favorite website/application collects. Write down how analyzing the collected data could help the website/application. 
+
+    Considering any kind of sales application, collecting data on the average cost of products vs sale price vs units sold would be essential data to have. Without this data it would be hard for a company to decide if that product is beneficial or not in the long run.
+    Or for a socila media platform, collecting data on user traffic would be helpful in determing costs for ads and possible revenue. It would also show which features get used more frequently and need more support.
+
+2.	Read the Django official documentation on QuerySet API. Note down the different ways in which you can evaluate a QuerySet.
+
+    Iteration, Asynchronous iteration, slicing, pickling, repr(), len(), list(), bool()
+
+3.	In the Exercise, you converted your QuerySet to DataFrame. Now do some research on the advantages and disadvantages of QuerySet and DataFrame, and explain the ways in which DataFrame is better for data processing.
+
+    DataFrame is better for data processing because DataFrames are faster, easier to use, and more powerful than tables or spreadsheets. Making it possible to do analytics on big data, using distributed computing clusters.
+
+=============================================================================================================================================================
+
+Exercise 2.8: Deploying a Django Project
+
+Reflection Questions:
+
+1.	Explain how you can use CSS and JavaScript in your Django web application.
+
+    You can use JavaScript in your Django web application throughout your templates to make the app more interactive. You can use CSS in your Django web application for presentation, including colors, fonts, and layout
+
+2.	In your own words, explain the steps you’d need to take to deploy your Django web application. 
+
+    A
+
+3.	(Optional) Connect with a few Django web developers through LinkedIn or any other network. Ask them for their tips on creating a portfolio to showcase Python programming and Django skills. Think about which tips could help you improve your portfolio.
+
+4.	You’ve now finished Achievement 2 and, with it, the whole course! Take a moment to reflect on your learning:
+
+    a.	What went well during this Achievement? 
+
+        A
+
+    b.	What’s something you’re proud of? 
+
+        A
+
+    c.	What was the most challenging aspect of this Achievement? 
+
+        A
+
+    d.	Did this Achievement meet your expectations? Did it give you the confidence to start working with your new Django skills?
+
+        A
